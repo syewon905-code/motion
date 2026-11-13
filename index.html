@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Motion</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;800&display=swap">
+<style>
+:root{--bg:#0b1f17;--card:#12302a;--text:#f4f7f5;--muted:#a9c2b8;--accent:#ffd98a;--line:#1f4a3d}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Noto Sans KR",system-ui,sans-serif;line-height:1.5}
+main{max-width:1100px;margin:0 auto;padding:48px 16px 80px}
+h1{font-size:clamp(32px,6vw,56px);font-weight:800;margin:0 0 4px;letter-spacing:-.02em}
+h1 span{color:var(--accent)}
+.sub{color:var(--muted);margin:0 0 40px}
+h2{font-size:22px;margin:48px 0 16px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.hero video{width:100%;border-radius:14px;display:block;background:#000}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+.card{background:var(--card);border-radius:14px;overflow:hidden}
+.card video{width:100%;display:block;aspect-ratio:16/9;background:#000}
+.card div{padding:12px 16px 16px}
+.card b{display:block}
+.card small{color:var(--muted)}
+.tag{display:inline-block;background:var(--accent);color:#1a1a1a;font-size:12px;font-weight:800;padding:2px 8px;border-radius:99px;margin-left:6px;vertical-align:middle}
+a{color:var(--accent)}
+footer{margin-top:56px;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<main>
+  <h1>Motion <span>Graphics</span></h1>
+  <p class="sub">30초 · 16:9 · 1920×1080 모션 그래픽</p>
+
+  <section class="hero">
+    <h2>Happy New Year 2027 <span class="tag">최종본</span></h2>
+    <video src="new-year-2027/happy_new_year_2027_30s_v4_christmas.mp4" controls playsinline preload="metadata"></video>
+  </section>
+
+  <h2>신년 인사 영상 — 다른 버전</h2>
+  <div class="grid">
+    <div class="card"><video src="new-year-2027/happy_new_year_2027_30s_v2.mp4" controls playsinline preload="metadata"></video><div><b>v2 · 다이나믹</b><small>마을 · 몽타주 · 카운트다운 · 불꽃놀이 · 건배</small></div></div>
+    <div class="card"><video src="new-year-2027/happy_new_year_2027_30s_v3_kitsch.mp4" controls playsinline preload="metadata"></video><div><b>v3 · 키치</b><small>팝 컬러 · 스티커 타이포 · 나눔고딕 ExtraBold</small></div></div>
+    <div class="card"><video src="new-year-2027/happy_new_year_2027_30s.mp4" controls playsinline preload="metadata"></video><div><b>v1 · 타이포그래피</b><small>골드 · 보케 · 키네틱 타이포</small></div></div>
+  </div>
+
+  <h2>제로 콜라 컨셉 광고 시안</h2>
+  <div class="grid">
+    <div class="card"><video src="pepsi-zero/pepsi_zero_ad_30s.mp4" controls playsinline preload="metadata"></video><div><b>Zero Sugar · 30s</b><small>청량 · 키네틱 타이포 · 합성 BGM</small></div></div>
+  </div>
+
+  <footer>소스 코드: <a href="https://github.com/syewon905-code/motion">github.com/syewon905-code/motion</a></footer>
+</main>
+</body>
+</html>
